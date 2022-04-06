@@ -1,0 +1,86 @@
+.post-single-container {
+
+    background-color: $off-white;
+    color: $dk-green;
+    padding-bottom: 2.75rem;
+
+    .post-single-wrapper {
+
+        padding-top: 4rem;
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+
+        .posts-sidebar {
+            flex: 3;
+            margin: 1.25rem;
+            padding: 1rem;
+            padding-bottom: 1.85rem;
+            border-radius: 0.85rem;
+            background-color: $lt-green-ol;
+            box-shadow: $box-bevel;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 24rem;
+            max-height: 58rem;
+
+            .sidebar-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .sidebar-title {
+                    font-size: 1.8rem;
+                    margin: 0.85rem;
+                    padding: 0.28rem;
+                    border-top: 1px solid $dk-green;
+                    border-bottom: 1px solid $dk-green;
+                }
+
+                .posts-img {
+                    width: 12rem;
+                    height: 12rem;
+                    margin-top: 1rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 3px solid $dk-green;
+                    
+                }
+
+                .author-content {
+                    padding: 1.85rem;
+                }
+
+                .posts-sidebar-list {
+                    margin-bottom: 1.85rem;
+
+                    .posts-sidebar-list-item {
+                        color: $dk-blue;
+                        display: inline-block;
+                        width: 50%;
+                        margin-top: 1rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+        .single-container {
+            flex: 9;
+
+            .single-wrapper {
+
+                pre {
+                    white-space: pre-line;
+                    font-family: $primary-font;
+                    font-size: 1.25rem;
+                }
+
+            }
+
+            
+        }
+    }
+}

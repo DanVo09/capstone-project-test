@@ -1,0 +1,22 @@
+.checkout-container {
+
+    color: $dk-green;
+
+    .checkout-wrapper {
+
+        .checkout-form {
+            color: $off-white;
+            max-width: 64rem;
+            background-color: $dk-green;
+            padding: 1rem;
+            border-radius: 1.15rem;
+            box-shadow: $box-bevel;
+
+           .checkout-button-container {
+               text-align: center;
+               width: 100%;
+           }
+        }
+    }
+
+}

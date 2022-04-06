@@ -1,0 +1,37 @@
+
+.logo-img {
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+}
+
+.slick-slider {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: black !important;
+}
+
+.slick-dot li a {
+    color: black;
+}
+
+.logo-flex {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    img {
+        width: 80%;
+    }
+    .logo-flex {
+        max-width: 1600px;
+    }
+}

@@ -1,0 +1,26 @@
+.memberships-container {
+
+    background-color: $off-white;
+    color: $dk-green;
+    padding-bottom: 2.75rem;
+
+    .memberships-wrapper {
+
+        padding-top: 4rem;
+        max-width: 1600px;
+        margin: 0 auto;
+
+        .banner {
+            text-align: center;
+            padding: 10rem 0 2rem 0;
+            margin-bottom: 6rem;
+
+            .header-banner {
+                max-width: 80%;
+                margin: 0 auto;
+                text-shadow: $txt-shadow-md;
+            }
+        }
+
+    }
+}

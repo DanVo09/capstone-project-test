@@ -1,0 +1,166 @@
+.course-detail-page-wrapper {
+    h2,h3, p, a {
+        color: $dk-green;
+    }
+    .main-container {
+        .sidebar {
+            border: 1px solid $dk-green;
+            margin: 2rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: $box-bevel;
+            display: none;
+            background-color: $dk-green;
+             li, a {
+                color: white;
+            }
+          
+            h2 {
+                text-align: center;
+                padding: 1rem;
+                background-color: $yellow;
+                border-radius: 0.5rem;
+                font-size: 1.2rem;
+            }
+
+            h2, li {
+                border-bottom: 1px solid white;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    margin: 0;
+                    a {
+                        text-transform: none;
+                        display: block;
+                        padding: 1rem;
+                    }
+
+                    a:hover {
+                        background-color: $yellow;
+                        color: $dk-green;
+                    }
+                }
+            } 
+        }
+        .course-content {
+            
+        .course-card-img-container {
+            padding: 1rem;
+            img {
+                width: 100%;
+            }
+        }
+
+        .course-content-detail {
+            padding: 1rem 1rem 2rem 1rem;
+            h2 {
+                text-align: center;
+                padding-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+            p {
+                padding-bottom: 0.5rem;
+            }
+            p:last-of-type {
+                padding-bottom: 1.5rem;
+            }
+
+            a {
+                background-color: $yellow;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            a:hover {
+                background-color: $dk-green;
+                color: $off-white;
+            }
+        }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    .course-detail-page-wrapper {
+        .main-container {
+            .sidebar {
+                position: sticky;
+                top: 9rem;
+            }
+            .course-content {
+                display: flex;
+                justify-content: space-between;
+                .course-card-img-container{
+                    width: 30%;
+                    
+                }
+    
+                .course-content-detail{
+                    width: 65%;
+                    h2 {
+                    text-align: left;
+                    }
+                }
+    
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .course-detail-page-wrapper {
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            .sidebar {
+                display: block;
+                width: 30%;
+                h2{
+                    text-align: left;
+                }
+            }
+
+            .course-content {
+                margin-top: 1rem;
+                width: 68%;
+                .course-card-img-container {
+                    width: 30%;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+                .course-content-detail {
+                    width: 68%;
+                    h2 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .course-detail-page-wrapper {
+        .main-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            .sidebar {
+                width: 20%;
+            }
+
+            .course-content {
+                width: 78%;
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.login-form-container {
+    max-width: 25rem;
+    margin: 0 auto;
+    h1, label, button, a {
+        color: $dk-green;
+    }
+
+    a {
+        text-transform: none;
+        padding: 0.5rem;
+        color: $dk-blue;
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+    }
+
+    a:hover {
+        color: $lt-blue;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        
+    }
+
+    .form {
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        input {
+            padding: 0.5rem;
+            border-radius: 5rem; 
+            border: 1px solid $dk-green;
+        }
+
+        button {
+            padding: 0.5rem;
+            border-radius: 5rem;
+            margin-top: 2rem;
+            border: 1px solid $dk-green;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: $yellow;
+            color: $dk-green;
+            border: none;
+        }
+
+        button:hover {
+            background-color: $dk-green;
+            color: $off-white;
+        }
+        
+        label {
+            margin-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .error {
+            color:red;
+        }
+
+        .optional-info {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+
+            input {                    
+                margin: 0 0.5rem;
+                width: fit-content;
+                border-radius: 999px;
+            }
+
+            label {
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                padding: 0.5rem 1rem;
+            }
+                
+        }
+
+        a {
+            padding-bottom: 1rem;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .login-form-container {
+        border: 1px solid $dk-green;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        padding: 1rem;
+        .form {
+           .optional-info {
+               a {
+                padding-left: 2rem;
+                padding-right: 0;
+               }
+               
+           } 
+        }
+    }
+}

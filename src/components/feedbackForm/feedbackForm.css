@@ -1,0 +1,100 @@
+.feedbackform {
+    color: #07342A;
+    background-color: white;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.feedbackform  h2 {
+    color: #07342A;
+    text-align: center;
+}
+
+.feedbackform > p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.feedbackform label {
+    color: black;
+}
+
+.form-detail {
+    padding: 1rem;
+}
+
+.form-detail p {
+    padding-bottom: 1rem;
+}
+
+.form-detail label, input,  select {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+}
+.form-detail input,  select {
+
+    padding: 0.5rem;
+}
+
+
+.checkbox > div:first-of-type input, .checkbox > div:first-of-type label {
+    width: fit-content;
+   
+}
+
+.checkbox > div:first-of-type > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox > div:first-of-type > div div {
+    width: 50%;
+}
+
+.user-name div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-name div input {
+    width: 48%;
+}
+
+#submit {
+    background: #e8ef1a;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+#submit:hover {
+    background-color: #07342A;
+    color: #e8ef1a;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .form-detail {
+        column-count: 2;
+    }
+
+    .form-detail > div {
+        padding: 0 1rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .form-detail {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}

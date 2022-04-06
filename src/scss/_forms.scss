@@ -1,0 +1,22 @@
+.form-label {
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.form-input{
+    padding: 0.65rem 0 0.65rem 0.5rem;
+    border-radius: 0.85rem;
+    border: none;
+    width: 100%;
+}
+
+.form-input:focus{
+    outline: none;
+}
+
+.required {
+    color: red;
+}
+
+
+

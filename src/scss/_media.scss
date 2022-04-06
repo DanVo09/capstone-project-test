@@ -1,0 +1,331 @@
+@media screen and (min-width: 470px){
+    .course-info-card {
+
+        .card-sub-container {
+            display: flex;
+
+            .content-container {
+                 margin-left: 1rem;
+              }
+        }
+    }
+
+    .header-wrapper {
+        .dama-logo {
+            width: 20rem;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 550px){
+
+    // displays slider arrows for larger viewports
+
+    .slider-container {
+        .btn-slide {
+            visibility: visible;
+        }
+    }
+   
+}
+
+@media screen and (min-width: 670px){
+
+    .course-info-card {
+
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+       
+
+        .card-title-content {
+            grid-column: 1 / span 1;
+        }
+        
+    }
+
+    .feature {
+
+        .event-card-content {
+
+            margin-top: 1rem;
+            
+            .card-content-wrapper {
+
+                h2 {
+                    font-size: 2.35rem;
+                }
+            }
+
+        }
+
+    }
+
+    .contact-form {
+
+        margin-bottom: -1rem;
+       
+
+        .form-group {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .form-control {
+                width: 100%;
+            }
+        }
+    }
+
+    .contact-page-wrapper {
+
+    
+        .google-map-section {
+
+            
+
+            .map-container {
+                height: 50rem !important;
+            }
+    
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 760px) {
+    .event-wrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+
+        .feature {
+            grid-column: 1 / -1;
+        }
+
+        .non-feature:nth-of-type(odd){
+            margin-top: 4rem;
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+
+
+        .feature {
+
+           
+            .event-card-img-container {
+            max-width: 22rem;
+            height: 22rem;
+            margin-left: -10rem;
+            margin-bottom: -14rem;
+
+            .event-card-img {
+                height: 22rem !important;
+            }
+        }
+
+            .card-content-wrapper {
+                max-width: 24rem;
+                margin-left: 12rem;
+                margin-top: -4rem;
+            }
+
+
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+
+    .education-section {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .section-header{
+            grid-column: 1 / -1;
+        }
+
+        .course-info-card {
+            grid-column: 1 / span 2;
+        }
+
+        .enroll-today-card {
+            grid-column: 2 / span 2;
+
+            .enroll-content {
+                margin-left: -3rem;
+            }
+        }
+
+        .nait-con-ed-card {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    .slider-container {
+
+        .slider-content-container {
+            left: 65%;
+            margin-left: 1rem;
+        }
+
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+
+    // desktop navbar and header styling
+
+    .header-wrapper {
+
+        .nav-toggle {
+            display: none;
+        }
+
+        .navBar {
+            position: static;
+            background-color: transparent;
+            padding: 0;
+
+            .navMenu {
+                display: flex;
+                justify-content: flex-end;
+                gap: 1rem;
+            }
+        }
+
+        .cart-icon {
+            margin-left: 1rem;
+        }
+
+    }
+
+    .slider-container {
+
+        .slider-content-container {
+            left: 67%;
+        }
+
+    }
+   
+}
+
+@media screen and (min-width: 1500px){
+
+   .education-section {
+       grid-template-columns: 1fr 1fr 1fr 1.75fr;
+
+       .nait-con-ed-card {
+           grid-column: 4;
+           grid-row: 2;
+           margin-left: 8rem;
+       }
+   }
+
+   .header-wrapper {
+       .navBar{
+           .navMenu {
+               gap: 2.25rem;
+           }
+       }
+   }
+
+}
+
+@media screen and (min-width: 1600px){
+    .events-section {
+        display: grid;
+        grid-template-columns: 1fr 1.75fr 1fr 1fr;
+        max-width: 1600px;
+       
+        .section-header {
+            margin-bottom: 8rem;
+            grid-column: 1 / span 2;
+           
+        }
+
+        .event-wrapper {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 0.75fr;
+            grid-column: 1 / -1;
+           
+            gap: 2rem;
+
+            .feature {
+                grid-column: 1 / span 2;
+                grid-row: 1 / span 2;
+                justify-self: flex-end;
+                
+            }
+
+            .non-feature:nth-of-type(odd) {
+               
+                margin-top: 0;
+                
+            }
+
+           
+            .non-feature:nth-of-type(2){
+                grid-row: 1;
+                grid-column: 3;
+                margin-top: 18rem;
+            }
+
+            .non-feature:nth-of-type(3){
+                grid-row: 1;
+                grid-column: 4;
+                margin-top: 24rem;
+                
+            }
+
+            .non-feature:nth-of-type(4){
+                grid-row: 2;
+                grid-column: 3;
+                margin-top: -8rem;
+                
+            }
+
+            .non-feature:nth-of-type(5){
+                grid-row: 2;
+                grid-column: 4;
+               
+            }
+        }
+    }
+
+    .contact-page-wrapper {
+
+        padding-bottom: 4rem;
+
+        .contact-content-container {
+            display: flex;
+            gap: 1rem;
+
+            .contact-form-section {
+                margin: 0;
+                width: 50%;
+                padding: 2rem;
+            }
+    
+            .google-map-section {
+                margin: 0;
+                margin-top: 0.65rem;
+
+                
+            }
+        }
+    }
+
+    
+
+
+}
+

@@ -1,0 +1,40 @@
+{"data":
+    [
+        {
+            "id":1,
+            "attributes":
+            {
+                "name":"cloudera",
+                "createdAt":"2022-04-02T01:20:14.234Z",
+                "updatedAt":"2022-04-02T01:20:15.123Z",
+                "publishedAt":"2022-04-02T01:20:15.121Z",
+                "logo":
+                {
+                    "data":
+                    {
+                        "id":1,
+                        "attributes":
+                        {
+                            "name":"cloudera.png",
+                            "alternativeText":"cloudera.png",
+                            "caption":"cloudera.png",
+                            "width":147,
+                            "height":61,
+                            "formats":null,
+                            "hash":"cloudera_0d20bd0042",
+                            "ext":".png",
+                            "mime":"image/png",
+                            "size":6.24,
+                            "url":"/uploads/cloudera_0d20bd0042.png",
+                            "previewUrl":null,
+                            "provider":"local",
+                            "provider_metadata":null,
+                            "createdAt":"2022-04-02T01:20:04.415Z",
+                            "updatedAt":"2022-04-02T01:20:04.415Z"
+                        }
+                    }
+                }
+            }
+        },
+        
+        {"id":2,"attributes":{"name":"newcomp analytics | tableau","createdAt":"2022-04-02T01:20:46.325Z","updatedAt":"2022-04-02T01:20:46.859Z","publishedAt":"2022-04-02T01:20:46.858Z","logo":{"data":{"id":7,"attributes":{"name":"tableau.png","alternativeText":"tableau.png","caption":"tableau.png","width":426,"height":97,"formats":{"thumbnail":{"name":"thumbnail_tableau.png","hash":"thumbnail_tableau_1dcacc6fb0","ext":".png","mime":"image/png","width":245,"height":56,"size":8.95,"path":null,"url":"/uploads/thumbnail_tableau_1dcacc6fb0.png"}},"hash":"tableau_1dcacc6fb0","ext":".png","mime":"image/png","size":15.77,"url":"/uploads/tableau_1dcacc6fb0.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-04-02T01:20:04.520Z","updatedAt":"2022-04-02T01:20:04.520Z"}}}}},{"id":3,"attributes":{"name":"data iku","createdAt":"2022-04-02T01:21:11.193Z","updatedAt":"2022-04-02T01:21:11.721Z","publishedAt":"2022-04-02T01:21:11.719Z","logo":{"data":{"id":4,"attributes":{"name":"data-iku.png","alternativeText":"data-iku.png","caption":"data-iku.png","width":206,"height":94,"formats":null,"hash":"data_iku_d4138851d2","ext":".png","mime":"image/png","size":14.69,"url":"/uploads/data_iku_d4138851d2.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-04-02T01:20:04.420Z","updatedAt":"2022-04-02T01:20:04.420Z"}}}}},{"id":4,"attributes":{"name":"oracle","createdAt":"2022-04-02T01:21:32.546Z","updatedAt":"2022-04-02T01:21:33.051Z","publishedAt":"2022-04-02T01:21:33.049Z","logo":{"data":{"id":6,"attributes":{"name":"oracle.png","alternativeText":"oracle.png","caption":"oracle.png","width":104,"height":64,"formats":null,"hash":"oracle_e41603fd59","ext":".png","mime":"image/png","size":2.2,"url":"/uploads/oracle_e41603fd59.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-04-02T01:20:04.433Z","updatedAt":"2022-04-02T01:20:04.433Z"}}}}},{"id":5,"attributes":{"name":"ISACA","createdAt":"2022-04-02T01:21:57.282Z","updatedAt":"2022-04-02T01:22:49.739Z","publishedAt":"2022-04-02T01:22:49.738Z","logo":{"data":{"id":5,"attributes":{"name":"isaca.png","alternativeText":"isaca.png","caption":"isaca.png","width":134,"height":67,"formats":null,"hash":"isaca_7936c39152","ext":".png","mime":"image/png","size":6.97,"url":"/uploads/isaca_7936c39152.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-04-02T01:20:04.427Z","updatedAt":"2022-04-02T01:20:04.427Z"}}}}},{"id":6,"attributes":{"name":"INTEQNA","createdAt":"2022-04-02T01:22:31.044Z","updatedAt":"2022-04-02T01:22:46.957Z","publishedAt":"2022-04-02T01:22:46.955Z","logo":{"data":{"id":3,"attributes":{"name":"inteqna.png","alternativeText":"inteqna.png","caption":"inteqna.png","width":120,"height":38,"formats":null,"hash":"inteqna_d104ea1e57","ext":".png","mime":"image/png","size":4.47,"url":"/uploads/inteqna_d104ea1e57.png","previewUrl":null,"provider":"local","provider_metadata":null,"createdAt":"2022-04-02T01:20:04.419Z","updatedAt":"2022-04-02T01:20:04.419Z"}}}}}],"meta":{"pagination":{"page":1,"pageSize":25,"pageCount":1,"total":6}}}

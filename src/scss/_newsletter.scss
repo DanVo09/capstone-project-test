@@ -1,0 +1,160 @@
+.news-container {
+    background-color: $off-white;
+    color: $dk-green;
+    padding-bottom: 2.75rem;
+
+    .news-wrapper{
+
+        padding-top: 4rem;
+        max-width: 1600px;
+        margin: 0 auto;
+
+        .banner {
+            text-align: center;
+            padding: 10rem 0 2rem 0;
+            margin-bottom: 6rem;
+
+            .header-banner {
+                max-width: 80%;
+                margin: 0 auto;
+                text-shadow: $txt-shadow-md;
+            }
+        }
+
+        .news-content {
+            display: flex;
+
+            // sidebar styling
+
+            .posts-sidebar {
+                flex: 3;
+                margin: 1.25rem;
+                padding: 1rem;
+                padding-bottom: 1.85rem;
+                border-radius: 0.85rem;
+                background-color: $lt-green-ol;
+                box-shadow: $box-bevel;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-height: 54rem;
+
+                .sidebar-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .sidebar-title {
+                        font-size: 1.8rem;
+                        margin: 0.85rem;
+                        padding: 0.28rem;
+                        border-top: 1px solid $dk-green;
+                        border-bottom: 1px solid $dk-green;
+                    }
+
+                    .posts-img {
+                        width: 12rem;
+                        height: 12rem;
+                        margin-top: 1rem;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 3px solid $dk-green;
+                        
+                    }
+
+                    .author-content {
+                        padding: 1.85rem;
+                    }
+
+                    .posts-sidebar-list {
+                        margin-bottom: 1.85rem;
+
+                        .posts-sidebar-list-item {
+                            color: $dk-blue;
+                            display: inline-block;
+                            width: 50%;
+                            margin-top: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            }
+
+            .posts {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                flex: 9;
+                margin: 1.25rem;
+                padding: 0 1rem;
+
+                .post {
+
+                    max-width: 24rem;
+                    margin: 0 1.5rem 2.5rem 1.5rem;
+                    padding: 1rem;
+                    padding-bottom: 2rem;
+                    background-color: $dk-blue;
+                    color: $off-white;
+                    border-radius: 0.85rem;
+                    box-shadow: $box-bevel;
+
+                    .post-img {
+                        object-fit: cover;
+                        border-radius: 0.85rem;
+                        width: 100%;
+                        height: 18rem;
+                    }
+
+                    .post-info {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+
+                        .post-categories {
+
+                            margin: 0.5rem 0;
+
+                            .post-category {
+                                font-size: 0.885rem;
+                                display: inline-block;
+                                margin-right: 1rem;
+                            }
+                        }
+
+                        .post-title {
+                            border-bottom: 1px dotted $lt-green;
+                            padding-bottom: 0.35rem;
+                            text-align: center;
+                            color: $yellow;
+                            cursor: pointer;
+                        }
+    
+                        .post-date {
+                            margin-top: 0.35rem;
+                            font-style: italic;
+                            font-size: 0.925rem;
+                            color: $dk-blue;
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    .post-desc {
+
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    
+                }
+            }
+        }
+
+    }
+}

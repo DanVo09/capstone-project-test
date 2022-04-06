@@ -1,0 +1,135 @@
+@import url("https://use.typekit.net/ozr4jqb.css"); // Museo Sans url
+@import url("https://use.typekit.net/ozr4jqb.css"); // ethnocentric url
+
+
+// ---------- Variables ----------
+
+
+// Color Palette
+
+$dk-blue: #003469;
+$lt-blue: #058ED9;
+$dk-green: #07342A;
+$lt-green: #169873;
+$yellow: #e8ef1a;
+$off-white: #f5f5f5;
+
+// background colors
+
+$home-bkg: radial-gradient(circle at top right, $dk-blue, $dk-green, $dk-blue);
+
+// overlays
+
+$dk-blue-ol: rgba(0, 21, 43, 0.7);
+$dk-green-ol: rgba(7, 52, 42, 0.4);
+$lt-green-ol: rgba(22, 152, 115, 0.3);
+$off-white-ol: rgba(245,245,245,0.4);
+$lt-blue-ol: rgba(99, 237, 255, 0.3);
+
+// typeface
+
+$primary-font: museo-sans, sans-serif;
+$title-font: ethnocentric, sans-serif;
+
+// text shadows
+
+$txt-shadow-white: 3px 2px 4px #f2f2f2;
+$txt-shadow-lt: 2px 2px 8px #D3D3D3;
+$txt-shadow-dk: 3px 2px 4px #0f0f0f;
+$txt-shadow-md: 1px 1px 1px #0f0f0f;
+
+// box shadows
+
+$btn-shadow: 4px 5px 12px black;
+$box-bevel: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+            rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+            rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+            rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+$box-embed: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+            rgba(0, 52, 105, 0.5) -16px -16px 36px 28px,
+            rgba(7, 52, 42, 0.5) -14px -14px 12px 28px,
+            rgba(255, 255, 255, 0.25) -12px -12px 4px 8px,
+            rgba(0, 0, 0, 0.25) 8px -8px 4px 8px,
+            rgba(0, 0, 0, 0.25) -8px 8px 4px 8px,
+            rgba(0, 0, 0, 0.25) 8px 8px 4px 8px;
+
+$box-shadow-sm: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+            
+
+
+
+// --------- Global Styling ----------
+
+body {
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: $primary-font;
+    color: $off-white;
+    overflow-y:scroll;
+    scrollbar-color: transparent transparent;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $off-white;
+    transition: all 0.1s ease-in-out;
+  }
+
+
+// fluid typography
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, p {
+    font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+h1 {
+    --min: 2em;     /* minimum value */
+    --val: 5vw;     /* preferred value = 5% viewport width */
+    --max: 3.2em;     /* maximum value */
+    font: $title-font;
+}
+
+h2 {
+    --min: 1.5em;   /* minimum value */
+    --val: 4vw;     /* preferred value = 4% viewport width */
+    --max: 2.25em;  /* maximum value */
+}
+
+h3 {
+    --min: 1.5em;  /* minimum value */
+    --val: 3.5vw;   /* preferred value = 4% viewport width */
+    --max: 1.65em;     /* maximum value */
+}
+
+h4 {
+    --min: 1.15em;  /* minimum value */
+    --val: 3vw;     /* preferred value = 4% viewport width */
+    --max: 1.75em;  /* maximum value */
+}
+
+p {
+    --min: 1.15rem;     /* minimum value */
+    --val: 2.5vw;   /* preferred value = 2.5% viewport width */
+    --max: 1.5rem;   /* maximum value */
+    line-height: 1.35;
+}
+
+// hides the scroll bar
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+

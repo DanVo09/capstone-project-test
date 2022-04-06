@@ -1,0 +1,98 @@
+.events-section{
+   
+    width: 100vw;
+
+    .event-wrapper {
+        display: grid;
+    }
+   
+
+    .event-card {
+
+        max-width: 28rem;
+        justify-self: center; 
+        margin-bottom: 2rem;
+
+        .event-card-img-container {
+
+            position: relative;
+            transform: scale(0.92);
+            width: 100%;
+            
+    
+            .event-card-img {
+                object-fit: cover;
+                border-radius: 2.85rem;
+                box-shadow: $box-embed;
+                height: 220px;
+                width: 100%;
+                
+            }  
+        }
+    
+        .event-card-content {
+            background-color: $dk-green;
+            border-radius: 2.85rem;
+            box-shadow: $box-bevel;
+            padding: 6rem 2rem 4rem;
+            margin-top: -5rem;
+    
+            h2 {
+                color: $yellow;
+                text-shadow: $txt-shadow-dk;
+                font-size: 1.75rem;
+                border-bottom: 1px dotted $yellow;
+                margin-bottom: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+    
+            h3 {
+                margin-bottom: 0.5rem;
+                text-shadow: $txt-shadow-dk;
+            }
+    
+            h4 {
+                font-style: italic;
+                font-weight: 400;
+                border-bottom: 1px dotted $off-white;
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                text-shadow: $txt-shadow-dk;
+            }
+    
+            .event-desc {
+                text-shadow: $txt-shadow-dk;
+                border-bottom: 1px dotted $off-white;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+    
+            a {
+                text-align: right;
+                font-size: 1.25rem;
+                float: right;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    .feature {
+
+        max-width: 38rem;
+
+        .event-card-content{
+            background-color: $lt-green;
+        }
+        
+    }
+
+}

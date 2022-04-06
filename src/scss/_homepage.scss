@@ -1,0 +1,308 @@
+.home-page-container {
+    background: $home-bkg;
+    background-size: 180% 180%;
+    animation: gradient-animation 9s ease infinite;
+    overflow-y: scroll;
+    position: relative;
+    height: 100vh;
+
+    
+    
+} 
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.homepage-wrapper{
+  
+    position: absolute;
+    margin-top: 2rem;
+    padding: 2rem 1rem 10rem 1rem;
+    top: 100%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1600px;
+     
+}
+
+// education section styling
+
+.education-section {
+
+  display: grid;
+  grid-template-rows: 12fr;
+  grid-template-columns: 1fr;
+
+  .section-header {
+
+    max-width: 60rem;
+    margin-bottom: 6rem;
+    grid-row: 1;
+
+    h2 {
+      color: $yellow;
+      text-shadow: $txt-shadow-dk;
+      font-family: $title-font;
+    }
+
+    h3 {
+      margin-bottom: 2rem;
+      color: $yellow;
+      text-shadow: $txt-shadow-dk;
+    }
+
+    p {
+      text-shadow: $txt-shadow-dk;
+    }
+  }
+
+  // course info card
+
+  .course-info-card {
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: $lt-blue;
+      min-width: 20rem;
+      max-width: 42rem;
+      border-radius: 2.85rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      box-shadow: $box-embed;
+      position: relative;
+      grid-column: 1;
+      grid-row: 2 / span 4;
+      z-index: 2;
+     
+     
+      .card-title-content {
+        margin-bottom: 2rem;
+        grid-row: 1;
+        grid-column: 1 / -1;
+      }
+
+      h2 {
+        color: $yellow;
+        text-shadow: $txt-shadow-dk;
+        margin-bottom: 2rem;
+      }
+
+      li {
+        text-shadow: $txt-shadow-dk;
+      }
+
+      .card-sub-container {
+        // display: flex;
+        margin-bottom: 1rem;
+        grid-row: 2;
+       
+
+        .icon-container {
+          
+          .course-icon {
+            font-size: 6rem;
+            color: $yellow;
+            
+          }
+
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          color: $yellow;
+          text-shadow: $txt-shadow-dk;
+        }
+
+        p {
+          font-size: 0.95rem;
+          margin-bottom: 1rem;
+        }
+
+        a {
+          color: $off-white;
+          float: right;
+          text-shadow: $txt-shadow-dk;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
+        
+      }
+  }
+
+  //enroll today card
+
+  .enroll-today-card {
+    background-color: $dk-blue;
+    padding: 1rem;
+    max-width: 42rem;
+    height: 38rem;
+    border-radius: 2.85rem;
+    box-shadow: $box-bevel;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 6 / span 4;
+    position: relative;
+    z-index: 1;
+
+    .storage-icon {
+      color: $off-white-ol;
+      font-size: 12rem;
+      position: absolute;
+      top: 0;
+      right: 5%;
+      opacity: 0.3;
+    }
+
+    .people-icon {
+      color: $off-white-ol;
+      font-size: 12rem;
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      opacity: 0.3;
+    }
+
+    .enroll-content {
+
+      max-width: 26rem;
+      padding: 1rem;
+     
+      
+      h2 {
+        color: $yellow;
+        text-shadow: $txt-shadow-dk;
+      }
+  
+      p {
+        text-shadow: $txt-shadow-dk;
+      }
+  
+      .enroll-btn {
+  
+        @extend %btn;
+        background-color: $lt-blue;
+        width: 18rem;
+        margin-top: 2rem;
+        float: right;
+        box-shadow: $box-bevel;
+        
+  
+        &:hover {
+          color: $lt-blue;
+          background-color: $yellow;
+        }
+      }
+
+    }
+    
+  }
+
+  // nait con ed card
+
+  .nait-con-ed-card {
+     
+      background-color: $dk-green-ol;
+      border-radius: 2.85rem;
+      padding: 2rem;
+      position: relative;
+      backdrop-filter: blur(5px);
+      max-width: 30rem;
+      height: 26rem;
+      box-shadow: $box-bevel;
+      grid-row: 12;
+     
+      
+      .nait-logo {
+        width: 12rem;
+        height: auto;
+        float: right;
+        opacity: 0.5;
+      }
+
+      .nait-content {
+
+        max-width: 24rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.5rem;       
+
+        h3 {
+          
+          color: $yellow;
+          text-shadow: $txt-shadow-dk;
+        }
+
+        p {
+          text-shadow: $txt-shadow-dk;
+        }
+
+        a {
+          transition: all 0.3s ease-in-out;
+
+          &:hover{
+             color: $yellow;
+          }
+        }
+      }
+  }
+
+}
+
+// events section styling
+
+.events-section {
+   
+   margin: 4rem 0;
+
+   .section-header {
+      max-width: 60rem;
+      margin-bottom: 6rem;
+      
+      h2 {
+        color: $yellow;
+        text-shadow: $txt-shadow-dk;
+        font-family: $title-font;
+      }
+
+      h3 {
+        margin-bottom: 2rem;
+        color: $yellow;
+        text-shadow: $txt-shadow-dk;
+      }
+
+      p {
+        text-shadow: $txt-shadow-dk;
+      }
+   }
+}
+
+// our sponsors styling
+
+.slideshow-container {
+  h2 {
+    font-family: $title-font;
+    color: $yellow;
+    text-shadow: $txt-shadow-dk;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}

@@ -1,0 +1,104 @@
+.cart-wrapper {
+    position: fixed;
+    
+    border-radius: 0.85rem;
+    background-color: $dk-blue-ol;
+    color: $off-white;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    z-index: 10;
+
+    .cart-showhide-container {
+        align-self: flex-end;
+
+        .off-icon {
+            font-size: 2rem;
+            color: $yellow;
+        }
+    }
+
+    .cart-inner-wrapper {
+        height: max-content;
+        max-height: 75vh;
+        max-width: 50rem;
+        overflow-y: auto;
+        text-shadow: $txt-shadow-dk;
+
+
+        .cartItem-item {
+
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 0.15rem dotted $lt-blue;
+            
+            .cartItem-img {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 0.85rem;
+            }
+
+            .cart-item-content{
+                width: 100%;
+
+                .cartItem-title {
+                    margin-bottom: 1rem;
+                }
+                
+                .cartItem-price-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $yellow;
+                    font-size: 1.25rem;
+                    width: 100%;
+
+                    .cartItem-currency {
+                        font-weight: bold;
+                        
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .cart-total {
+        margin-top: 4rem;
+        text-align: center;
+        text-shadow: $txt-shadow-dk;
+        
+
+        .cart-currency {
+            color: $yellow;
+            font-weight: bold;
+            font-size: 1.35rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 0.15rem dotted $lt-green;
+        }
+
+        .checkOut-btn {
+            @extend %btn;
+            background-color: $yellow;
+            color: $dk-green;
+            box-shadow: $box-bevel;
+            text-shadow: none;
+            
+
+            &:hover{
+                background-color: $dk-green;
+                color: $yellow;
+            }
+        }
+    }
+
+
+}
